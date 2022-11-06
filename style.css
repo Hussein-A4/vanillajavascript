@@ -42,7 +42,7 @@ img {
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: rgb(0, 61, 214);}
+  .dropdown:hover #MovieSelector{background-color: rgb(255, 0, 0);}
 
   .dropbtn {
     background-color: #ff0000;
@@ -51,4 +51,29 @@ img {
     font-size: 16px;
     border: none;
     font-weight: bold;
+    text-align: center;
+    align-items: center;
+  }
+
+  #MovieSelector{
+    background-color: #00379c;
+    color: white;
+  }
+
+  #getinfo{
+    background-color: #52fafa;
+  border: 5px;
+  color: rgb(255, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  }
+
+  p{
+    align-items: center;
   }

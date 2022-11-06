@@ -11,19 +11,30 @@
 </head>
 <body>
   <div class="dropdown">
-    <button class="dropbtn">Spiderman Movies</button>
-    <div class="dropdown-content">
-      <a href="#">Spider-Man</a>
-      <a href="#">Spider-Man 2</a>
-      <a href="#">Spider-Man 3</a>
-      <a href="#">The Amazing Spider-Man</a>
-      <a href="#">The Amazing Spider-Man 2</a>
-      <a href="#">Spider-Man: Homecoming</a>
-      <a href="#">Spider-Man: Far from Home</a>
-      <a href="#">Spider-Man: No Way Home</a>
-      <a href="#">Spider-Man: Into the Spider-Verse</a>
-      <a href="#">Spider-Man: The Venom Saga</a>
-    </div>
-  </div>  
+    <form>
+	<p id="menu"> Select preferred movie:
+		<select id="MovieSelector">
+			<option value="557">Spider-Man</option>
+			<option value="558">Spider-Man 2</option>
+			<option value="559">Spider-Man 3</option>
+			<option value="1930">The Amazing Spider-Man</option>
+			<option value="102382">The Amazing Spider-Man 2</option>
+			<option value="315635">Spider-Man: Homecoming</option>
+			<option value="429617">Spider-Man: Far from Home</option>
+			<option value="634649">Spider-Man: No Way Hom</option>
+			<option value="324857">Spider-Man: Into the Spider-Verse</option>
+			<option value="50410">Spider-Man: The Venom Saga</option>
+		</select>
+	</p>
+	</form>
+	</div>
+	<p> The value of the option selected is:
+		<span class="output"></span>
+	</p>
+	<button id="getinfo" onclick="getOption()"> GET </button>  
+
+	<p id="movieTitle"></p>
+	<img src="" alt="" class="movieImg">
+	<iframe src="" frameborder="0" class="movieFrame"></iframe>
 </body>
 </html>
