@@ -10,31 +10,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="dropdown">
-    <form>
-	<p id="menu"> Select preferred movie:
-		<select id="MovieSelector">
-			<option value="557">Spider-Man</option>
-			<option value="558">Spider-Man 2</option>
-			<option value="559">Spider-Man 3</option>
-			<option value="1930">The Amazing Spider-Man</option>
-			<option value="102382">The Amazing Spider-Man 2</option>
-			<option value="315635">Spider-Man: Homecoming</option>
-			<option value="429617">Spider-Man: Far from Home</option>
-			<option value="634649">Spider-Man: No Way Hom</option>
-			<option value="324857">Spider-Man: Into the Spider-Verse</option>
-			<option value="50410">Spider-Man: The Venom Saga</option>
-		</select>
-	</p>
-	</form>
+<center>
+<div class="main-container">		
+  <div class="row"></div>
+	<div class="dropdown">
+		<form>
+			<p id="menu"> Select preferred movie:
+				<select id="MovieSelector">
+					<option value="557">Spider-Man</option>
+					<option value="558">Spider-Man 2</option>
+					<option value="559">Spider-Man 3</option>
+					<option value="1930">The Amazing Spider-Man</option>
+					<option value="102382">The Amazing Spider-Man 2</option>
+					<option value="315635">Spider-Man: Homecoming</option>
+					<option value="429617">Spider-Man: Far from Home</option>
+					<option value="634649">Spider-Man: No Way Hom</option>
+					<option value="324857">Spider-Man: Into the Spider-Verse</option>
+					<option value="50410">Spider-Man: The Venom Saga</option>
+				</select>
+			</p>
+		</form>
+		<button id="getinfo" onclick="getOption()"> GET </button>
 	</div>
-	<p> The value of the option selected is:
-		<span class="output"></span>
-	</p>
-	<button id="getinfo" onclick="getOption()"> GET </button>  
-
-	<p id="movieTitle"></p>
-	<img src="" alt="" class="movieImg">
-	<iframe src="" frameborder="0" class="movieFrame"></iframe>
+	<div>
+		<p> The Id of the movie selected is:
+			<span class="output"></span>
+		</p>
+	</div>
+	<div>
+		<div class="movie-details">
+			<p id="movieTitle1"></p>
+			<p id="movieTitle2"></p>
+			<p id="movieTitle3"></p>
+			<p id="movieTitle4"></p>
+			<img src="" alt="" class="movieImg">
+			<iframe src="" frameborder="0" class="movieFrame"></iframe>
+		</div>
+	</div>
+</div>
+</center>
 </body>
 </html>

@@ -22,14 +22,19 @@ function getOption() {
       }
     }).then((movieData) => {
       const img = document.getElementsByClassName('movieImg');
-      const p = document.getElementById('movieTitle');
+      const p1 = document.getElementById('movieTitle1');
+      const p2 = document.getElementById('movieTitle2');
+      const p3 = document.getElementById('movieTitle3');
+      const p4 = document.getElementById('movieTitle4');
       const iframe = document.getElementsByClassName('movieFrame');
       const movie = movieData.data
       const trailers = movie.videos.results.filter((trailer) => trailer.type === "Trailer");
-      console.log(p)
       iframe[0].src = `https://www.youtube.com/embed/${trailers.at(0).key}`
       img[0].src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-      p.innerHTML = `Movie Title: ${movie.title} -- Release Date:  ${movie.release_date} -- Popularity: ${movie.popularity} -- Average Vote: ${movie.vote_average} -- Vote Count: ${movie.vote_count} -- Original Language: ${movie.original_language} -- Overview: ${movie.overview}`;
+      p1.innerHTML = `Movie Title: ${movie.title} -- Release Date:  ${movie.release_date}`;
+      p2.innerHTML = `Popularity: ${movie.popularity} -- Average Vote: ${movie.vote_average}`
+      p3.innerHTML = `Vote Count: ${movie.vote_count} -- Original Language: ${movie.original_language} -- Budget($): ${movie.budget}`
+      p4.innerHTML = `Overview: ${movie.overview}`
     });
 }
 
